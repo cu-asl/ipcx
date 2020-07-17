@@ -14,16 +14,26 @@ classdef ipcx
             rosshutdown
         end
         
-        function sub = subscribe(obj,topic,func)
+        function sub = subscribe(obj,topic,show)
             if nargin == 2
+                %default
                 sub = rossubscriber(topic, @dispFx);
             elseif nargin == 3
-                sub = rossubscriber(topic, func);
-            end
-
-            
+                if show == "on"
+                    sub = rossubscriber(topic, @dispFx);
+                elseif show == "off"
+                    sub = rossubscriber(topic);
+                end
+            end            
         end
       
+       function sub = subscribe2(obj,topic,func)
+                
+           sub = rossubscriber(topic, func);
+          
+        end
+        
+        
     end
 end
 

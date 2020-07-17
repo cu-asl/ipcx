@@ -19,7 +19,10 @@ class IPC:
         self.publisher = rospy.Publisher(topic, String, queue_size=10)
         
 
-    def publish(self,message):
+    def publish(self,message,**kwargs):
+        if kwargs["show"] == "on": 
+            print(message)
+
         self.publisher.publish(message)
 
     def client(self,topic,callback = None):
