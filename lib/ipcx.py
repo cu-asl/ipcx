@@ -36,12 +36,6 @@ class IPC:
 
     def isRun(self):
         return not rospy.is_shutdown()
-
-    def off(self):
-        rospy.signal_shutdown("bye")
-
-    def spin(self):
-        rospy.spin()
         
 
 def spin():
