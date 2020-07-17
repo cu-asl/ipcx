@@ -1,6 +1,9 @@
-classdef ipcx
+classdef ipcx < handle
     properties (Access = public)
-        msg = ""
+        msg = "";
+        topic = "";
+        pub = "";
+        sub = "";
     end
     
     
@@ -14,7 +17,19 @@ classdef ipcx
             rosshutdown
         end
         
+        function publish(obj,topic)
+            pub = rospublisher(topic,"std_msgs/String");
+            obj.msg = rosmessage(pub);
+            obj.topic =topic;
+            obj.pub = pub;
+        end
+        function send(obj,msg)
+            obj.msg.Data = msg;
+            send(obj.pub,obj.msg)
+        end
+      
         function sub = subscribe(obj,topic,show)
+            
             if nargin == 2
                 %default
                 sub = rossubscriber(topic, @dispFx);
@@ -24,13 +39,16 @@ classdef ipcx
                 elseif show == "off"
                     sub = rossubscriber(topic);
                 end
-            end            
+            end
+            obj.topic =topic;
+            obj.sub = sub;
         end
       
        function sub = subscribe2(obj,topic,func)
                 
            sub = rossubscriber(topic, func);
-          
+           obj.topic =topic;
+           obj.sub = sub;
         end
         
         
