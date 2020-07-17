@@ -15,4 +15,4 @@ ipc = ipcx.IPC("example_sub")
 #-------- start client : subscribe topic : "test"  --------#
 cli = ipc.client("test",callbackfx)
 
-ipc.spin()
+ipcx.spin()
