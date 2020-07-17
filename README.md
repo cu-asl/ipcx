@@ -3,9 +3,8 @@
 IPCx is stand for Inter-process communication x.
 
 The IPCx is a set of libraries and tools for Inter-process communication.
-Our IPC type is publish–subscribe pattern. Now we are developing it with **matlab** and **python** which are based on **ROS Noetic Ninjemys** .
+Our IPC type is publish–subscribe pattern. Now we are developing it with **matlab** and **python3** which are based on **ROS** .
 
-**Note :** We develop our project on WSL and Windows 10, so we can support your problems only on WSL or Ubuntu
 
 ## Version of Software
 We developed on
@@ -23,8 +22,8 @@ ROS | ROS Noetic Ninjemys (ROS 1)
 
 2.Install [ROS](http://wiki.ros.org/noetic/Installation/Ubuntu)
 
-3.Copy our library that located in [/lib](https://github.com/CUASL/ipcx/tree/master/lib) on our github
-to your project directory
+3.Copy our library files that located in [lib](https://github.com/CUASL/ipcx/tree/master/lib) on our github
+to your project directory.
 
 ## Usage
 
