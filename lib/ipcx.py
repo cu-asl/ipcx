@@ -11,7 +11,7 @@ class IPC:
         self.publisher = None
         self.subscriber = None
         self.topic = None
-
+        self.data = list()
         rospy.init_node(node)
 
     def server(self,topic):
@@ -30,9 +30,25 @@ class IPC:
         self.subscriber = rospy.Subscriber(topic, String, callback)
 
         return self.subscriber
-        
+
+    def addData(self,newData):
+        self.data.append(newData)
+
     def isRun(self):
         return not rospy.is_shutdown()
+
+    def off(self):
+        rospy.signal_shutdown("bye")
+
+    def spin(self):
+        rospy.spin()
+        
+
+def spin():
+    rospy.spin()
+
+def off():
+    rospy.signal_shutdown("bye")
 
 def toJson(data):
     return json.dumps(data)
