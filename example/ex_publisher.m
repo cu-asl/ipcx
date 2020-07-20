@@ -1,3 +1,5 @@
+addpath('ipcx')
+
 ipc = ipcx;
 ipc.on;
 ipc.publish("test");
