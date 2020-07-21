@@ -22,8 +22,19 @@ ROS | ROS Noetic Ninjemys (ROS 1)
 
 2.Install [ROS](http://wiki.ros.org/noetic/Installation/Ubuntu)
 
-3.Copy our library files that located in [lib](https://github.com/CUASL/ipcx/tree/master/lib) on our github
+3.Copy our library folder that located in [lib](https://github.com/CUASL/ipcx/tree/master/lib) on our github
 to your project directory.
+
+4.import our library in your code
+    
+python
+```python
+import ipcx
+```
+matlab
+```matlab
+addpath('ipcx')
+```
 
 ## Usage
 
