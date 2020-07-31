@@ -1,1 +1,1 @@
-from ipcx.api import *
+from .ipcx import *

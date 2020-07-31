@@ -4,11 +4,11 @@ import time
 ipc = ipcx.IPC("example")
 
 #-------- start server : publish topic : "test"  --------#
-ipc.server("test")
+serv1  = ipcx.server("test")
 
 while ipc.isRun():
     msg = "Hello World!"
-    ipc.publish(msg,show = "on")
+    serv1.publish(msg,show = "on")
 
     #sleep 1 sec
     time.sleep(1)

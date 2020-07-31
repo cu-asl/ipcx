@@ -2,17 +2,18 @@ import ipcx
 import rospy
 
 count = 0
+ipc = ipcx.IPC("example_sub")
 
 def callbackfx(msg):
     global count
     count+=1 
     if count == 10:
-        ipcx.off()
+        ipc.off()
     print(msg.data,count)
 
-ipc = ipcx.IPC("example_sub")
+
 
 #-------- start client : subscribe topic : "test"  --------#
-cli = ipc.client("test",callbackfx)
+cli = ipcx.client("test",callbackfx)
 
-ipcx.spin()
+ipc.spin()

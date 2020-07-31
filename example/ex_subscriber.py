@@ -1,5 +1,5 @@
 import ipcx
-import rospy
+
 
 def callbackfx(msg):
 
@@ -8,6 +8,6 @@ def callbackfx(msg):
 ipc = ipcx.IPC("example_sub")
 
 #-------- start client : subscribe topic : "test"  --------#
-cli = ipc.client("test",callbackfx)
-
-ipcx.spin()
+#cli = ipc.client("test",callbackfx)
+cli = ipcx.client("test")
+ipc.spin()
