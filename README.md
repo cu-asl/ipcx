@@ -37,6 +37,7 @@ addpath('ipcx')
 ```
 
 ## Usage
+You can get start and see tutorial [wiki](https://github.com/CUASL/ipcx/wiki)
 
 ## Supported platforms and languages
 - platforms
