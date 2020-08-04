@@ -25,6 +25,8 @@ Moreover, IPCx require **ROS Toolbox** on Matlab.
 
 2.Install [ROS](http://wiki.ros.org/noetic/Installation/Ubuntu)
 
+> you can see our ROS installation tutorial at [https://github.com/CUASL/ipcx/wiki/Installation](https://github.com/CUASL/ipcx/wiki/Installation)
+
 3.Copy our library folder [ipcx](https://github.com/CUASL/ipcx/tree/master/ipcx) on our github
 to your project directory so that you can use our library.
 
