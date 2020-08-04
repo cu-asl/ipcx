@@ -45,11 +45,12 @@ You can get start and see more tutorial [wiki](https://github.com/CUASL/ipcx/wik
 ### How to run
 This example will show case server: python and client: matlab
 
-**step** 1 open WSL
+*    **step** 1 open WSL
 ```bash
 roscore
 ```
-**step 2** open another WSL and run your serverfile 
+
+*   **step 2** open another WSL and run your serverfile 
 ```bash
 python3 yourServerFileName.py
 ```
@@ -59,8 +60,7 @@ python3 yourServerFileName.py
 python3 ex_publisher.py
 ```
 
-
-**step 3** open matlab and run your client file
+*   **step 3** open matlab and run your client file
 
 *for example(run in matlab bash or you can click run at matlab UI)*
 ```matlab
