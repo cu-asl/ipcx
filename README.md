@@ -40,7 +40,21 @@ addpath('ipcx')
 ```
 
 ## Usage
-You can get start and see tutorial [wiki](https://github.com/CUASL/ipcx/wiki)
+You can get start and see more tutorial [wiki](https://github.com/CUASL/ipcx/wiki)
+
+### How to run
+This example will show case server: python and client: matlab
+
+**step** 1 open WSL
+```bash
+roscore
+```
+**step 2** open another WSL and run your serverfile 
+```bash
+python3 yourServerFileName.py
+```
+
+**step 3** open matlab and run your client file
 
 ## Supported platforms and languages
 - platforms
