@@ -25,8 +25,8 @@ Moreover, IPCx require **ROS Toolbox** on Matlab.
 
 2.Install [ROS](http://wiki.ros.org/noetic/Installation/Ubuntu)
 
-3.Copy our library folder that located in [lib](https://github.com/CUASL/ipcx/tree/master/lib) on our github
-to your project directory.
+3.Copy our library folder [ipcx](https://github.com/CUASL/ipcx/tree/master/ipcx) on our github
+to your project directory so that you can use our library.
 
 4.import our library in your code
     
@@ -54,7 +54,18 @@ roscore
 python3 yourServerFileName.py
 ```
 
+*For Example in example directory*
+```bash
+python3 ex_publisher.py
+```
+
+
 **step 3** open matlab and run your client file
+
+*for example(run in matlab bash or you can click run at matlab UI)*
+```matlab
+ex_subscriber
+```
 
 ## Supported platforms and languages
 - platforms
